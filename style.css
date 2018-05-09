@@ -11,6 +11,7 @@ only if the screen width is larger than 1200px */
   }
 }
 
+
 @media (min-width: 1200px) {
   #nav-tabContent {
     width: 700px;
@@ -24,6 +25,16 @@ only if the screen width is larger than 1200px */
 		background-color: rgba(0, 0, 0, 0.05);
 		color: rgba(0, 0, 255, 0.8);    
   }
+}
+
+#nav-profile-img{
+  width: 60px;
+  height: 60px;
+
+  border-radius: 100%;
+  border-width: 1px;
+  border-style: solid;  
+  border-color: red;
 }
 
 .cyclePhoto{
@@ -43,19 +54,10 @@ only if the screen width is larger than 1200px */
   text-shadow: 1px 1px 1px pink; /*x-axis: 1px, y-axis: 1px, blur: 2px*/
 }
 
-
-#img-profile{
-	width: 60px;
-	height: 60px;
-
-	border-radius: 100%;
-	border-width: 1px;
-	border-style: solid;	
-	border-color: red;
-}
-
+/*No border on the table*/
 .table-no-border>thead>tr>th,
 .table-no-border>tbody>tr>th,
 .table-no-border>tbody>tr>td{
 	border-top: none;
 }
+

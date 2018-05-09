@@ -1,0 +1,20 @@
+1. html5shiv.js
+
+<!--[if lt IE 9]-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<!--[endif]-->	
+
+2. filter: none
+
+/*IE8 compatibility*/
+.nav-tabs, .tab-content{
+  filter: none;
+}
+
+3. jQuery 1.11.1
+
+<script
+  src="https://code.jquery.com/jquery-1.11.1.min.js"
+  integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE="
+  crossorigin="anonymous"></script>
+
