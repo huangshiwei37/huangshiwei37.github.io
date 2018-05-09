@@ -1,0 +1,18 @@
+
+1. configure the Github repository
+
+1.1) Create a "CNAME" file under the root directory of github.io repository
+
+1.2) Input the custom domain name, e.g., huangshiwei.me
+
+2. configure the DNS provider (e.g., namecheap)
+
+2.1) Add a "CNAME" record (e.g., host: www; value: huangshiwei37.github.io)
+
+2.2) Add an "A" record (e.g., host: @; value: 185.199.108.153)
+
+Note: Each user may have a different IP address, which can be obtained by ping the github page, e.g., "ping huangshiwei37.github.io".
+
+
+
+
