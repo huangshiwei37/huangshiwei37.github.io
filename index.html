@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="shortcut icon" href="favicon/profile.ico" type="image/x-icon">
 	<link rel="icon" href="favicon/profile.ico" type="image/x-icon">
-	<title>Shiwei's Website</title>
+	<title>Shiwei's Homepage</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -11,11 +12,12 @@
 
 <!-- put a anchor for back to top -->
 <a name="top"></a>
- <!-- Navigation bar -->
-<header>
-<nav id="nav-bar" class="container">
+
+<!-- Navigation bar -->
+<div id="nav-bar" class="container">
   <div class="nav nav-tabs justify-content-end align-items-end" id="nav-tab" role="tablist"> 	
-		<img class="mr-auto" id="img-profile" data-toggle="tab" src="profile/profile.jpg" role="tab"> 
+  	<!-- separate profile img away from link tabs: mr-auto, justify-content-end -->
+		<img class="mr-auto" id="nav-profile-img" data-toggle="tab" src="profile/profile.jpg" role="tab"> 
 
 		<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
 		<a class="nav-item nav-link" id="nav-projects-tab" data-toggle="tab" href="#nav-projects" role="tab" aria-controls="nav-projects" aria-selected="false">Projects</a>    
@@ -25,14 +27,13 @@
 
 		<a class="nav-item nav-link" href="myLife/myLife.html">My Life</a>
   </div>
-</nav>
-</header>
+</div>
+<!-- End/ Navigation bar  -->
 
 <!-- Content -->
-<section>
 <div class="container tab-content" id="nav-tabContent">
 
-<!-- Home -->
+	<!-- Home -->
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
   	
 		<!-- cycle images automatically -->
@@ -79,6 +80,7 @@
   			<div class="col text-center welcome">-- Welcome to Shiwei's Homepage --</div>
   		</div>
   	</div>
+  	<!-- End/ cycle images -->
 
 		<!-- profile, education, experience -->
 		<hr>
@@ -149,9 +151,9 @@
 
 		</div>
   </div>
-  <!-- /profile, education, experience -->
+  <!-- End/ profile, education, experience -->
 
-<!-- Projects -->
+	<!-- Projects -->
   <div class="tab-pane fade" id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
   <h3>Academic Projects</h3>
   <ul>
@@ -162,9 +164,11 @@
   	<li>Proposed a transmit power optimization algorithm for amplify-and-forward relay networks based on the two-stage stochastic programming method, where energy consumption kept almost the same as the traditional power control scheme while the control signaling overhead reduced by about 50%</li>
   </ul>
 	</div>  
+	<!-- End/ Projects -->
 
-<!-- Publications -->
+	<!-- Publications -->
   <div class="tab-pane fade" id="nav-publications" role="tabpanel" aria-labelledby="nav-publications-tab">
+  	<!-- Journal Papers -->
   	<h3>Journal Papers</h3>
   	<div style="overflow-y:scroll; height: 300px">
 			<table class="table table-sm table-hover">
@@ -225,51 +229,54 @@
 			  </tbody>
 			</table> 
 		</div> 	
+		<!-- End/ Journal Papers -->
 
-	<hr>
- 	<h3>Conference Papers</h3>
-  	<div style="overflow-y:scroll; height: 300px">
-			<table class="table table-sm table-hover">
-			  <thead>
-			  	<!-- Without table header, set col width -->
-			  	<col style="width:5%">
-					<col style="width:95%">	
-			  </thead>
-			  <tbody>
-			    <tr>			    	
-			      <th scope="row">[C6]</th>
-			      <td>Zhen Zhao, <strong>Shiwei Huang</strong>, and Jun Cai, ``Energy Efficient Packet Transmission Strategies for Wireless Body Area Networks with Rechargeable Sensors <strong>(Invited Paper)</strong>,'' accepted to be published in Proc. of IEEE Vehicular Technology Conference (VTC) 2017-Fall, Toronto, Canada, Sep. 2017.</td>
-			    </tr>		
-			    <tr>			    	
-			      <th scope="row">[C5]</th>
-			      <td><strong>Shiwei Huang</strong>, Changyan Yi, and Jun Cai, ``A Sequential Posted Price Mechanism for D2D Content Sharing Communications,'' in proc. of IEEE Global Communications Conference (GLOBECOM), Washington DC, Dec. 2016, pp. 1--6.</td>
-			    </tr>				  	
-			    <tr>			    	
-			      <th scope="row">[C4]</th>
-			      <td><strong>Shiwei Huang</strong>, Jun Cai and Hong Zhang, ``Relay Selection for Average Throughput Maximization in Buffer-Aided Relay Networks,'' in proc. of IEEE International Conference on Communications (ICC),  London, UK, Jun. 2015, pp. 1994--1998.</td>
-			    </tr>							  	
-			    <tr>			    	
-			      <th scope="row">[C3]</th>
-			      <td><strong>Shiwei Huang</strong> and Jun Cai, ``Priority-Aware Scheduling for Coexisting Wireless Body Area Networks <strong>(Invited Paper)</strong>,'' in proc. of International Conference on Wireless Communications and Signal Processing (WCSP), Nanjing, China, Oct. 2015, pp. 1--5.</td>
-			    </tr>					  	
-			    <tr>			    	
-			      <th scope="row">[C2]</th>
-			      <td>Hongqiao Tian, Jun Cai, Attahiru S. Alfa, <strong>Shiwei Huang</strong> and Huijin Cao, ``Dynamic Load-Balancing Spectrum Decision for Cognitive Radio Networks with Multi-Class Services," in proc. of  2015 International Conference on Wireless Communications and Signal Processing (WCSP), Nanjing, China, Oct.~2015, pp. 1--5.</td>
-			    </tr>			  	
-			    <tr>			    	
-			      <th scope="row">[C1]</th>
-			      <td><strong>Shiwei Huang</strong>, Hongbin Chen, and Feng Zhao, ``Aggregation node selection for cooperative spectrum sensing in cognitive radio networks,'' in Proc. of 2011 International Conference on Wireless Communications, Networking and Mobile Computing (WiCOM), Wuhan, China, Sep.2011.</td>
-			    </tr>
-			  </tbody>
-			</table>
-	</div>
+		<!-- Conference Papers -->
+	 	<h3 style="margin-top: 30px">Conference Papers</h3>
+	  	<div style="overflow-y:scroll; height: 300px">
+				<table class="table table-sm table-hover">
+				  <thead>
+				  	<!-- Without table header, set col width -->
+				  	<col style="width:5%">
+						<col style="width:95%">	
+				  </thead>
+				  <tbody>
+				    <tr>			    	
+				      <th scope="row">[C6]</th>
+				      <td>Zhen Zhao, <strong>Shiwei Huang</strong>, and Jun Cai, ``Energy Efficient Packet Transmission Strategies for Wireless Body Area Networks with Rechargeable Sensors <strong>(Invited Paper)</strong>,'' accepted to be published in Proc. of IEEE Vehicular Technology Conference (VTC) 2017-Fall, Toronto, Canada, Sep. 2017.</td>
+				    </tr>		
+				    <tr>			    	
+				      <th scope="row">[C5]</th>
+				      <td><strong>Shiwei Huang</strong>, Changyan Yi, and Jun Cai, ``A Sequential Posted Price Mechanism for D2D Content Sharing Communications,'' in proc. of IEEE Global Communications Conference (GLOBECOM), Washington DC, Dec. 2016, pp. 1--6.</td>
+				    </tr>				  	
+				    <tr>			    	
+				      <th scope="row">[C4]</th>
+				      <td><strong>Shiwei Huang</strong>, Jun Cai and Hong Zhang, ``Relay Selection for Average Throughput Maximization in Buffer-Aided Relay Networks,'' in proc. of IEEE International Conference on Communications (ICC),  London, UK, Jun. 2015, pp. 1994--1998.</td>
+				    </tr>							  	
+				    <tr>			    	
+				      <th scope="row">[C3]</th>
+				      <td><strong>Shiwei Huang</strong> and Jun Cai, ``Priority-Aware Scheduling for Coexisting Wireless Body Area Networks <strong>(Invited Paper)</strong>,'' in proc. of International Conference on Wireless Communications and Signal Processing (WCSP), Nanjing, China, Oct. 2015, pp. 1--5.</td>
+				    </tr>					  	
+				    <tr>			    	
+				      <th scope="row">[C2]</th>
+				      <td>Hongqiao Tian, Jun Cai, Attahiru S. Alfa, <strong>Shiwei Huang</strong> and Huijin Cao, ``Dynamic Load-Balancing Spectrum Decision for Cognitive Radio Networks with Multi-Class Services," in proc. of  2015 International Conference on Wireless Communications and Signal Processing (WCSP), Nanjing, China, Oct.~2015, pp. 1--5.</td>
+				    </tr>			  	
+				    <tr>			    	
+				      <th scope="row">[C1]</th>
+				      <td><strong>Shiwei Huang</strong>, Hongbin Chen, and Feng Zhao, ``Aggregation node selection for cooperative spectrum sensing in cognitive radio networks,'' in Proc. of 2011 International Conference on Wireless Communications, Networking and Mobile Computing (WiCOM), Wuhan, China, Sep.2011.</td>
+				    </tr>
+				  </tbody>
+				</table>
+		</div>
+		<!-- End/ Conference Papers -->
 
   </div>  
+  <!-- End/ Publications -->
 
-<!-- Awards -->
+	<!-- Awards -->
   <div class="tab-pane fade" id="nav-awards" role="tabpanel" aria-labelledby="nav-awards-tab">
 			<h3>Awards & Scholarships</h3>
-	  	<div style="overflow-y:auto; height: ;">
+	  	<div>
 				<table class="table table-sm table-hover table-no-border">
 				  <thead>
 				  	<!-- Without table header, set col width -->
@@ -281,17 +288,17 @@
 				    <tr>			    	
 				      <th scope="row">&#x25AA</th>
 				      <td>Manitoba Graduate Scholarship, Manitoba Government</td>
-				      <td>Dec 2013 – Aug 2017</td>
+				      <td>Dec 2013 - Aug 2017</td>
 				    </tr>
 				    <tr>			    	
 				      <th scope="row">&#x25AA</th>
 				      <td>University of Manitoba Graduate Fellowship, University of Manitoba</td>
-				      <td>Sep 2013 – Nov 2013</td>
+				      <td>Sep 2013 - Nov 2013</td>
 				    </tr>
 				    <tr>			    	
 				      <th scope="row">&#x25AA</th>
 				      <td>Edward R. Toporeck Graduate Fellowship in Engineering, University of Manitoba</td>
-				      <td>2016 – 2017</td>
+				      <td>2016 - 2017</td>
 				    </tr>		
 				    <tr>			    	
 				      <th scope="row">&#x25AA</th>
@@ -337,8 +344,9 @@
 			  </table>
 			</div>
   </div>  
+  <!-- End/ Awards -->
 
-<!-- About -->
+	<!-- About -->
   <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
 		<div id="about" class="container">
 
@@ -366,7 +374,7 @@
 
 			<hr>
 			<div class="row">
-				<div class="col"><h3>I live here</h3></div>
+				<div class="col"><h3>I am here</h3></div>
 			</div>
 			<div class="row">
 				<!-- 21:9 aspect ratio -->
@@ -375,17 +383,19 @@
 				</div>
 			</div>
 		</div>
-  </div>    
+  </div> 
+  <!-- End/ About -->
+
 </div>
-</section>
+<!-- End/ Contents -->
 
 <!-- Footer -->
-<!-- margin-yaxis: my-2; padding-yaxis: py-4 -->
-<footer id="footer" class="container footer my-5 py-4">
+<!-- margin-yaxis: my-4; padding-yaxis: py-4 -->
+<footer id="footer" class="container footer my-4 py-4">
   <div class="row">
     <div class="col align-self-center text-center">
     	&copy 2018 Copyright: 
-    	<a href="https://huangshiwei.ga"> huangshiwei.ga</a> 
+    	<a href="https://huangshiwei.ga"> huangshiwei.me</a> 
     	or 
     	<a href="https://huangshiwei37.github.io/">huangshiwei37.github.io</a> 
     </div>
@@ -396,11 +406,13 @@
   	</div>
   </div>
 </footer>
+<!-- End/ footer -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
