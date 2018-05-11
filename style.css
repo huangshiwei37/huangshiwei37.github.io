@@ -54,6 +54,15 @@ only if the screen width is larger than 1200px */
   text-shadow: 1px 1px 1px pink; /*x-axis: 1px, y-axis: 1px, blur: 2px*/
 }
 
+.news{
+  font-style: normal;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: rgba(0,0,255,0.5);
+  text-shadow: 1px 1px 1px pink; /*x-axis: 1px, y-axis: 1px, blur: 2px*/
+}
+
 /*No border on the table*/
 .table-no-border>thead>tr>th,
 .table-no-border>tbody>tr>th,
